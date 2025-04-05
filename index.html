@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+         crossorigin="anonymous"
+      />
+      <link rel="stylesheet" href="style.css" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      />
+
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+         integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
+
+      <title>Getir</title>
+   </head>
+   <body>
+      <div class="fixed-top uper-container">
+         <!-- ! GETİR MOBİLE UYG İNDİR BAŞLANGIÇ -->
+
+         <div class="uper-app col-12 d-flex d-md-none">
+            <div class="d-flex uper-app-chld">
+               <div class="uper-app-chld-cls-icon d-flex">
+                  <i class="fa-solid fa-xmark"></i>
+               </div>
+               <div class="uper-app-chld-img">
+                  <img
+                     src="https://getir.com/images/icons/apple-icon-120x120.png"
+                     alt=""
+                  />
+               </div>
+               <div class="point d-flex">
+                  <div class="d-flex point-text-1 light-color">
+                     <span>Getir</span>
+                  </div>
+                  <div class="d-flex">
+                     <div class="d-flex star-div">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="bi bi-star-half"></i></span>
+                     </div>
+                     <span class="app-scor">196.754</span>
+                  </div>
+                  <div><span class="gbm-app">Getir bi mutluluk!</span></div>
+               </div>
+
+               <a
+                  href=""
+                  class="bg-light-color white-dark-color rounded-3 btn-app"
+                  >Uygulamayı aç</a
+               >
+            </div>
+         </div>
+
+         <!-- ! GETİR MOBİLE UYG İNDİR BİTİŞ -->
+
+         <!-- ! NAV BAŞLANGIÇI-->
+         <nav
+            class="container-fluid navbar navbar-expand-md py-0 ps-lg-4 pe-lg-1 ps-xl-5 pe-xl-1 row p-md-0"
+         >
+            <div class="nav-part-1 col-7">
+               <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                  <li
+                     class="nav-item nav-chld-1 px-2 px-lg-2 pb-1 pb-0 py-md-1"
+                  >
+                     <a class="nav-link" href="#"
+                        ><img src="img/getir.svg" alt=""
+                     /></a>
+                  </li>
+                  <li
+                     class="nav-item nav-filter nav-chld-2 px-2 px-lg-2 pb-1 pb-0 py-md-1"
+                  >
+                     <a class="nav-link" href="#"
+                        ><img src="img/getir-yemek.svg" alt=""
+                     /></a>
+                  </li>
+                  <li
+                     class="nav-item nav-filter nav-chld-3 px-2 px-lg-2 pb-1 pb-0 py-md-1"
+                  >
+                     <a class="nav-link" href="#"
+                        ><img src="img/getirbüyük.svg" alt=""
+                     /></a>
+                  </li>
+                  <li
+                     class="nav-item nav-filter nav-chld-4 px-2 px-lg-2 pb-1 pb-0 py-md-1"
+                  >
+                     <a class="nav-link" href="#"
+                        ><img src="img/getirsu.svg" alt=""
+                     /></a>
+                  </li>
+                  <li
+                     class="nav-item nav-filter nav-chld-5 px-2 px-lg-2 pb-1 pb-0 py-md-1"
+                  >
+                     <a class="nav-link" href="#"
+                        ><img src="img/getircarsi.svg" alt=""
+                     /></a>
+                  </li>
+               </ul>
+            </div>
+            <!--! NAV PART 2 Başlangıç-->
+            <div
+               class="nav-part-2 col-5 d-none d-md-flex justify-content-end pe-5"
+            >
+               <ul class="navbar-nav mb-2 mb-md-0">
+                  <li class="nav-item row">
+                     <a class="nav-link" href="#">
+                        <div class="d-flex">
+                           <span class="">
+                              <i class="fa-solid fa-globe"></i
+                           ></span>
+
+                           <span class="me-1 ms-2 d-none d-lg-inline"
+                              >Türkçe</span
+                           >
+                           <span class="d-none d-lg-inline">(TR)</span>
+                        </div></a
+                     >
+                  </li>
+
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">
+                        <div class="d-flex">
+                           <span><i class="fa-solid fa-gift"></i></span>
+                           <span class="ms-2 d-none d-lg-inline"
+                              >Kampanyalar</span
+                           >
+                        </div>
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#"
+                        ><div class="d-flex">
+                           <span><i class="fa-solid fa-user"></i></span>
+                           <span class="d-none d-lg-inline ms-2">Profil</span>
+                           <span class="d-flex span-down-icon ms-3"
+                              ><i class="fa-solid fa-chevron-down"></i
+                           ></span></div
+                     ></a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+         <!-- ! NAV BİTİŞİ-->
+
+         <!-- ! HEADER BAŞLANGIÇI-->
+         <header class="d-flex px-md5 row">
+            <div
+               class="d-flex content-lg-src mx-md-3 col-12 row p-0 p-md-1 m-0"
+            >
+               <div
+                  class="logo col-12 row d-flex col-md-6 col-lg-4 pt-4 pb-4 py-md-0 align-items-center col-lg-4 ps-md-0 ps-lg-4 m-0"
+               >
+                  <i
+                     class="fa-solid fa-bars d-flex col-3 white-light-color d-md-none fs-5"
+                  ></i>
+                  <img src="img/getir.svg" alt="" class="col-6" />
+                  <i
+                     class="bi bi-search d-flex col-3 white-light-color d-md-none justify-content-end fs-5"
+                  ></i>
+               </div>
+
+               <div class="src-div d-flex row col-md-5 col-lg-5 p-0 tvs-bg m-0">
+                  <!--? BU kısım md-lg-xl Görünüm Baş. -->
+                  <!-- <i
+                     class="bi bi-search d-flex color-light d-none d-md-inline"
+                  ></i> -->
+
+                  <input
+                     type="text"
+                     class="src-input border-0 d-none d-md-flex col-8 col-md-7 col-lg-6"
+                     placeholder="Ürün ara"
+                  />
+
+                  <!--? BU kısım md-lg-xl Görünüm bit.-->
+
+                  <div
+                     class="d-flex bg-white-light col-10 h-100 home-detail col-md-2 col-lg-3"
+                  >
+                     <div class="home-detail-img-div me-2 me-md-0">
+                        <img
+                           src="https://cdn.getir.com/address-emojies/House.svg"
+                           alt=""
+                           class="me-2 me-md-0"
+                        />
+                     </div>
+                     <div class="adres-detail">
+                        <span class="mx-md-3 d-inline d-md-none d-lg-inline"
+                           >Ev</span
+                        >
+
+                        <span class="color-gray ms-1 d-md-none"
+                           >Adnan Kahveci, Reşit Paşa Cd. 7-1, 34528 Beylikdüzü
+                           Osb/Beylikdüzü/İstanbul, Türkiye
+                        </span>
+                     </div>
+                     <i
+                        class="fa-solid fa-chevron-right light-color ms-md-2 d-inline d-lg-none"
+                     ></i>
+                     <i
+                        class="fa-solid fa-chevron-right light-color ms-md-2 d-none d-lg-inline"
+                     ></i>
+                  </div>
+
+                  <div
+                     class="d-flex col-2 col-md-3 h-100 tvs-div tvs-bg light-color flex-column flex-md-row"
+                  >
+                     <div>TVS</div>
+                     <div class="white-space">10-15 dk</div>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <!-- ! HEADER BİTİŞİ-->
+      </div>
+
+      <!--! Sipariş Bİlgisi Başlangıç -->
+      <div class="delivery-info d-none d-md-flex">
+         <div class="col-4 d-flex justify-content-around delivery-shadow">
+            <div class="delivery d-flex">
+               <div class="delivery-info-detail-1 d-flex me-4 me-md-3">
+                  <img
+                     src="https://getir.com/_next/static/images/bag-c43c3b2588349bace63586b13e84ee05.svg"
+                     alt=""
+                  />
+                  <div class="ms-3 ms-md-2">
+                     <div class="color-gray">Minimum</div>
+                     <div class="color-black">₺80,00</div>
+                  </div>
+               </div>
+
+               <div class="delivery-info-detail-2 d-flex">
+                  <img
+                     src="https://getir.com/_next/static/images/courier-pin-d5fe30611fa28465f3cb9840e7807bcc.svg"
+                     alt=""
+                  />
+                  <div class="ms-3 ms-md-2 text-nowrap">
+                     <div class="color-gray">Getirmesi</div>
+                     <div class="color-black">₺0,00 - 34,99</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-8 delivery-map-div">
+            <img
+               src="https://cdn.getir.com/getirweb-images/common/static-map.png"
+            />
+         </div>
+      </div>
+      <!--! Sipariş Bİlgisi Bitiş -->
+
+      <!--! Html Slider Başlangıç-->
+      <div class="row my-lg-4 mt-4 mb-0 p-0 slider-prnt full-width mx-0">
+         <div class="p-0 row slider-prnt mx-0">
+            <div class="slider-container col-lg-12 col-xl-11 p-0">
+               <div class="slider-img-box">
+                  <img
+                     src="https://cdn.getir.com/misc/65a51817a4cbc914cd834229_picUrl_tr_1705318963307.jpeg"
+                     alt=""
+                     class="px-0 px-md-1"
+                  />
+               </div>
+               <div class="slider-img-box">
+                  <img
+                     src="https://cdn.getir.com/misc/promo_tr_49fca243-121a-4a54-956c-504bb9ae8009.jpg"
+                     alt=""
+                     class="px-0 px-md-1"
+                  />
+               </div>
+
+               <div class="slider-img-box">
+                  <img
+                     src="https://cdn.getir.com/misc/654b2c09deacd15f3860962d_picUrl_tr_1699425505126.jpeg"
+                     alt=""
+                     class="px-0 px-md-1"
+                  />
+               </div>
+               <div class="slider-img-box">
+                  <img
+                     src="https://cdn.getir.com/misc/promo_tr_e2f3359b-22f9-45e2-a118-f9d3c8cf0df2.jpg"
+                     alt=""
+                     class="px-0 px-md-1"
+                  />
+               </div>
+               <div class="slider-img-box">
+                  <img
+                     src="https://banner-marketing-cdn.getir.com/images/b09d0d1f-7411-4ad3-9f67-4d3d3efcd9f8.jpg"
+                     alt=""
+                     class="px-0 px-md-1"
+                  />
+               </div>
+               <div class="slider-img-box">
+                  <img
+                     src="https://banner-marketing-cdn.getir.com/images/69dfc4de-cf6f-4c6f-98f8-ef550531bc44.jpg"
+                     alt=""
+                     class="px-0 px-md-1"
+                  />
+               </div>
+               <div class="slider-img-box">
+                  <img
+                     src="https://cdn.getir.com/misc/640ecef4fa00bd6639af9c66_picUrl_tr_1702067034685.jpeg"
+                     alt=""
+                     class="px-0 px-md-1"
+                  />
+               </div>
+               <div class="slider-img-box">
+                  <img
+                     src="https://cdn.getir.com/misc/6594faccfced5a74b0de9ade_picUrl_tr_1704262761747.jpeg"
+                     alt=""
+                     class="px-0 px-md-1"
+                  />
+               </div>
+               <div class="slider-img-box">
+                  <img
+                     src="https://cdn.getir.com/misc/64de2d4b62b09fe8ea663cfe_picUrl_tr_1699349093603.jpeg"
+                     alt=""
+                     class="px-0 px-md-1"
+                  />
+               </div>
+               <div class="slider-img-box">
+                  <img
+                     src="https://cdn.getir.com/misc/6593b61f19c6ce547ce289ab_picUrl_tr_1704195558278.jpeg"
+                     alt=""
+                     class="px-0 px-md-1"
+                  />
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--! Html Slider Bitiş-->
+
+      <!--!Minimum ve Getirmesi Başlangıç (md-sm)-->
+      <div
+         class="row d-md-none justify-content-center align-items-center min-get mb-3 mt-2"
+      >
+         <div
+            class="d-inline-flex justify-content-center align-items-center min-get-2"
+         >
+            <div
+               class="d-inline-flex align-items-center justify-content-center"
+            >
+               <span>Minimum</span>
+               <span>₺100,00</span>
+            </div>
+            <div
+               class="d-inline-flex align-items-center justify-content-center"
+            >
+               <span>Getirmesi</span>
+               <span>₺0,00 - ₺34,99</span>
+            </div>
+         </div>
+      </div>
+      <!--!Minimum ve Getirmesi Bitiş (md-sm)-->
+
+      <!-- ! Ürün Ve Kategori Başlangıç-->
+      <div class="d-flex urn-kat row ps-lg-2 pe-lg-5">
+         <!-- ! Kategori lg-xl Başlangıç-->
+         <div class="d-none d-md-inline-flex col-4 col-lg-3 kategori-big">
+            <div class="d-inline-flex kategori-fs-w">Kategoriler</div>
+            <div class="kategori-big-2">
+               <div>
+                  <a href="#" class="d-inline-flex"
+                     ><span class="kategori-big-2-span-fit"
+                        ><img src="img/getir-kategori-1.png" alt=""
+                     /></span>
+                     <span class="kategori-big-2-span-weight">Süper İkili</span
+                     ><i class="bi bi-chevron-down"></i>
+                  </a>
+               </div>
+               <div>
+                  <a href="#" class="d-inline-flex"
+                     ><span class="kategori-big-2-span-fit"
+                        ><img src="img/getir-kategori-2.png" alt=""
+                     /></span>
+
+                     <span class="kategori-big-2-span-weight"
+                        >Kazandıranlar</span
+                     ><i class="bi bi-chevron-down"></i>
+                  </a>
+               </div>
+               <div>
+                  <a href="#" class="d-inline-flex"
+                     ><span class="kategori-big-2-span-fit"
+                        ><img src="img/getir-kategori-3.png" alt="" /></span
+                     ><span class="kategori-big-2-span-weight">İndirimler</span
+                     ><i class="bi bi-chevron-down"></i
+                  ></a>
+               </div>
+               <div>
+                  <a href="#" class="d-inline-flex"
+                     ><span class="kategori-big-2-span-fit"
+                        ><img src="img/getir-kategori-4.png" alt="" /></span
+                     ><span class="kategori-big-2-span-weight"
+                        >Yeni Ürünler</span
+                     ><i class="bi bi-chevron-down"></i
+                  ></a>
+               </div>
+               <div>
+                  <a href="#" class="d-inline-flex"
+                     ><span class="kategori-big-2-span-fit"
+                        ><img src="img/getir-kategori-5.png" alt="" /></span
+                     ><span class="kategori-big-2-span-weight"
+                        >Yarıyıl Keyfi </span
+                     ><i class="bi bi-chevron-down"></i
+                  ></a>
+               </div>
+               <div>
+                  <a href="#" class="d-inline-flex"
+                     ><span class="kategori-big-2-span-fit"
+                        ><img src="img/getir-kategori-6.png" alt="" /></span
+                     ><span class="kategori-big-2-span-weight">Su & İçecek</span
+                     ><i class="bi bi-chevron-down"></i
+                  ></a>
+               </div>
+               <div>
+                  <a href="#" class="d-inline-flex"
+                     ><span class="kategori-big-2-span-fit"
+                        ><img src="img/getir-kategori-7.png" alt="" /></span
+                     ><span class="kategori-big-2-span-weight"
+                        >Meyve & Sebze</span
+                     ><i class="bi bi-chevron-down"></i
+                  ></a>
+               </div>
+               <div>
+                  <a href="#" class="d-inline-flex"
+                     ><span class="kategori-big-2-span-fit"
+                        ><img src="img/getir-kategori-8.png" alt="" /></span
+                     ><span class="kategori-big-2-span-weight">Fırından</span
+                     ><i class="bi bi-chevron-down"></i
+                  ></a>
+               </div>
+               <div>
+                  <a href="#" class="d-inline-flex"
+                     ><span class="kategori-big-2-span-fit"
+                        ><img src="img/getir-kategori-9.png" alt="" /></span
+                     ><span class="kategori-big-2-span-weight"
+                        >Süt Ürünleri</span
+                     ><i class="bi bi-chevron-down"></i
+                  ></a>
+               </div>
+
+               <div>
+                  <a href="#" class="d-inline-flex"
+                     ><span class="kategori-big-2-span-fit"
+                        ><img src="img/getir-kategori-10.png" alt="" /></span
+                     ><span class="kategori-big-2-span-weight">Dondurma</span
+                     ><i class="bi bi-chevron-down"></i
+                  ></a>
+               </div>
+               <div>
+                  <a href="#" class="d-inline-flex"
+                     ><span class="kategori-big-2-span-fit"
+                        ><img src="img/getir-kategori-11.png" alt="" /></span
+                     ><span class="kategori-big-2-span-weight">Temel Gıda</span
+                     ><i class="bi bi-chevron-down"></i
+                  ></a>
+               </div>
+            </div>
+         </div>
+
+         <!-- ! Kategori lg-xl Bitiş-->
+
+         <!-- ! Kategori Başlangıç md-sm  -->
+         <div class="sticky-top kategori d-inline-flex d-md-none col-12">
+            <!-- ! Main Categories Başlangıç md-sm -->
+
+            <div class="row main-categories">
+               <div
+                  class="col-12 align-items-center main-categories-2 d-inline-flex ps-0"
+               >
+                  <div><a href="#">Süper İkili</a></div>
+                  <div><a href="#">Kazandıranlar</a></div>
+                  <div><a href="#">İndirimler</a></div>
+                  <div><a href="#">Yeni Ürünler</a></div>
+                  <div><a href="#">Su & İçecek</a></div>
+                  <div><a href="#">Meyve & Sebze</a></div>
+                  <div><a href="#">Fırından</a></div>
+                  <div><a href="#">Süt Ürünleri</a></div>
+                  <div><a href="#">Atıştırmalık</a></div>
+                  <div><a href="#">Dondurma</a></div>
+                  <div><a href="#">Temel Gıda</a></div>
+                  <div><a href="#">Kahvaltılık</a></div>
+                  <div><a href="#">Yiyecek</a></div>
+                  <div><a href="#">Fit & Form</a></div>
+                  <div><a href="#">Kişisel Bakım</a></div>
+                  <div><a href="#">Ev Bakım</a></div>
+                  <div><a href="#">Ev & Yaşam</a></div>
+                  <div><a href="#">Teknoloji</a></div>
+                  <div><a href="#">Evcil Hayvan</a></div>
+                  <div><a href="#">Bebek</a></div>
+                  <div><a href="#">Cinsel Sağlık</a></div>
+               </div>
+            </div>
+
+            <!-- !  Main Categories Bitiş -->
+
+            <!-- !  Sub Categories Başlangıç md-sm -->
+            <div class="row sub-categories">
+               <div
+                  class="col-12 align-items-center sub-categories-2 d-inline-flex"
+               >
+                  <div><a href="#" class="mark">Su & İçecek</a></div>
+                  <div><a href="#">Atıştırmalık</a></div>
+                  <div><a href="#">Dondurma</a></div>
+                  <div><a href="#">Süt Ürünleri</a></div>
+                  <div><a href="#">Kahvaltılık</a></div>
+                  <div><a href="#">Yiyecek</a></div>
+                  <div><a href="#">Fırından</a></div>
+                  <div><a href="#">Ev Bakım</a></div>
+                  <div><a href="#">Kişisel Bakım</a></div>
+               </div>
+            </div>
+            <!-- !  Sub Categories Bitiş md-sm -->
+         </div>
+         <!-- ! Kategori Bitiş md-sm -->
+
+         <!--?-->
+         <!-- ! Ürün Başlangıç  -->
+         <div
+            class="product-container d-flex col-md-8 col-lg-5 col-xl-6 col-12"
+         >
+            <div class="d-inline-flex justify-content-start in-categories">
+               <div class="in-categories-chld-1">Kazandıranlar</div>
+               <div>
+                  <i class="fa-solid fa-angle-right in-categories-chld-2"></i>
+               </div>
+               <div class="in-categories-chld-1">Su & İçecek</div>
+            </div>
+            <div
+               class="d-inline-flex product-container-2 products justify-content-center"
+            ></div>
+         </div>
+         <!-- ! Ürün Bitiş -->
+
+         <!-- ! Sepet ve Durumu Başlangıç -->
+         <div class="col-4 col-xl-3 sepet-durumu pe-0">
+            <div class="d-inline-flex sepet-durumu-part-1">
+               <div class="kategori-fs-w sepet-durumu-part-1-chld-1">
+                  Sepetim
+               </div>
+               <div
+                  class="d-inline-flex sepet-durumu-part-1-chld-2 align-items-center"
+               >
+                  <img src="img/sepet.svg" />
+                  <div class="sd-main d-inline-flex">
+                     <div class="sd-chld-1">Sepetin şu an boş</div>
+                     <div class="sd-chld-2">
+                        Sipariş vermek için sepetine ürün ekle
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="d-inline-flex sepet-durumu-part-2">
+               <div class="kategori-fs-w">Geçmiş Siparişlerim</div>
+               <div class="d-inline-flex gs-chld p-4">
+                  <div class="date-home d-inline-flex">
+                     <div class="sd-home-div d-inline-flex">
+                        <img
+                           src="https://cdn.getir.com/misc/emoji/house.png"
+                           alt=""
+                        />
+                     </div>
+                     <div class="date-location d-inline-flex">
+                        <div class="sd-date sd-color-change">
+                           <span>8 Mar</span>
+                           <div><span> 2023 </span><span>14:53</span></div>
+                        </div>
+                        <div class="sd-location kategori-fs-w">
+                           <span>Ev</span>
+                        </div>
+                     </div>
+                     <div class="d-inline-flex sd-tutar">
+                        <div class="sd-icon">
+                           <img src="img/getir-sepet.svg" alt="" />
+                        </div>
+                        <div class="sd-tt">₺318,79</div>
+                     </div>
+                  </div>
+                  <div class="d-inline-flex all-see">Tümünü Gör</div>
+               </div>
+            </div>
+         </div>
+         <!-- ! Sepet ve Durumu Bitiş -->
+      </div>
+      <!-- ! Ürün Ve Kategori Bitiş-->
+
+      <!-- ! İnformation Başlangıç  -->
+
+      <div class="information row">
+         <div></div>
+
+         <div class="social"></div>
+      </div>
+
+      <!-- ! İnformation Bitiş-->
+
+      <!--! Slider Script Başlangıç-->
+      <script
+         src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      ></script>
+      <script
+         src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"
+         integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      ></script>
+      <script
+         src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+         integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      ></script>
+      <script type="text/javascript">
+         $(document).ready(function () {
+            $(".slider-container").slick({
+               slidesToShow: 3,
+               slidesToScroll: 1,
+               autoplay: true,
+               autoplaySpeed: 2000,
+               responsive: [
+                  {
+                     breakpoint: 767,
+                     settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                     },
+                  },
+               ],
+            });
+         });
+      </script>
+
+      <!--! Slider Script Bitiş-->
+      <script src="app.js"></script>
+   </body>
+</html>
